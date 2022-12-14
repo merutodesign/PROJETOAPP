@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background:  rgb(248, 204, 219);
+}
+
+
+
+#sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 100%;
+    background:#f9f9f9;
+    font-family: sans-serif;
+}
+
+#sidebar .logo {
+    font-size: 24px;
+    font-weight: 700;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    color: rgb(126, 207, 212);
+}
+
+#sidebar .logo .bi {
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar .menu {
+    width: 100%;
+    margin-top: 48pix;
+}
+
+#sidebar .menu li {
+    height: 30px;
+    background: rgb(248, 204, 219);
+    margin-left: 6px;
+    border-radius: 48px 0 0 48px;
+    padding: 4px;
+    margin-bottom: 15px;
+}
+
+#sidebar .menu li a {
+    width: 100%;
+    height: 100%;
+    background: rgb(241, 214, 223);
+    display: flex;
+    align-items: center;
+    border-radius: 48px;
+    font-size: 18px;
+    color: rgb(107, 107, 107);
+}
+
+#sidebar .menu li a:hover {
+    color: rgb(223, 22, 89);
+}
+
+#siderbar .menu li a .bi {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+/*MENU*/
+#content {
+    position: absolute;
+    width: calc(100% - 200px);
+    left: 280px;
+}
+#content nav {
+    height: 56px;
+    background: white;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+}
+#content .marca {
+    position: absolute;
+    left: 690px;
+    font-size: 30px;
+    color: rgb(126, 207, 212);
+}
+#content nav a {
+    color: rgb(126, 207, 212);
+}
+#content nav .bi.bi-list {
+    cursor: pointer;
+
+}
+#content nav .notification {
+    font-size: 20px;
+    position: relative;
+    left: 1500px;
+}
+
+#content nav .notification .num {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgb(241, 214, 223);
+    background: red;
+    color: rgb(241, 214, 223);
+    font-weight: 700;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* TELA PRINCIPAL*/
+/* FOTO PERFIL*/
+#content nav .profile img {
+    position: relative;
+    bottom: -110px;
+    left: 650px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#content nav .profile span {
+    position: absolute;
+    bottom: -180px;
+    left: 695px;
+    color: rgb(110, 183, 187);
+    font-size: 20px;
+}
+/*SALDO DAS CONTAS */
+#main {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    width: 1250px;
+    height: 300px;
+    background:white;
+    border-radius: 40px;
+    z-index: 1000;
+    font-family: sans-serif;
+
+}
+
+#main saldo {
+    bottom: 100px;
+}
+
+#main li a .data {
+    position: absolute;
+    bottom: 250px;
+    right: 540px;
+    font-size: 20px;
+    color: rgb(107, 107, 107);
+}
+#main li a .saldo-conta {
+    position:absolute;
+    bottom: 210px;
+    left: 530px;
+    font-size: 20px;
+    color: rgb(110, 183, 187);
+}
+#main li a .valortotal {
+    position:absolute;
+    bottom: 150px;
+    left: 500px;
+    font-size: 35px;
+    color: rgb(240, 192, 208);
+}
+#main li a .receita {
+    position:absolute;
+    bottom: 30px;
+    left: 25px;
+    font-size: 25px;
+}
+#main li .entrada {
+    position:absolute;
+    bottom: 70px;
+    left: 170px;
+    font-size: 20px;
+    color: rgb(114, 202, 143);
+}
+#main li a .valor{
+    color: rgb(107, 107, 107);
+}
+#main li a .despesas {
+    position:absolute;
+    bottom: 30px;
+    right: 5px;
+    font-size: 25px;
+}
+#main li .saida {
+    position:absolute;
+    bottom: 70px;
+    right: 180px;
+    font-size: 20px;
+    color: rgb(223, 135, 129);
+}
+#main li a .valorsaida {
+    color: rgb(107, 107, 107);
+}
+/*CARTÕES DE CRÉDITO*/
+
+#cartao {
+    position: absolute;
+    top: 400px;
+    left: 0px;
+    width: 1250px;
+    height: 380px;
+    background:white;
+    border-radius: 40px;
+    z-index: 1000;
+    font-family: sans-serif;
+}
+#cartao .cartoes {
+    position: relative;
+    top: -65px;
+    left: -150px;
+    font-size: 30px;
+    color: rgb(107, 107, 107);
+}
+#cartao .bi {
+    color: rgb(110, 183, 187);
+}
+#cartao .fatura {
+    position: relative;
+    top: 50px;
+    right: 150px;
+    background: rgb(240, 192, 208);
+    width: 500px;
+    height: 100px;
+    padding: 0 5rem;
+    margin-top: 1rem;
+    outline: none;
+    font-size: 20px;
+    border: 5px solid rgb(238, 173, 194);
+    border-radius: 48px;
+    color: rgb(107, 107, 107);
+
+    
+}
+#cartao .fatuaberta {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    background: rgb(158, 229, 233);
+    width: 500px;
+    height: 100px;
+    padding: 0 5rem;
+    margin-top: 1rem;
+    outline: none;
+    font-size: 20px;
+    border: 5px solid rgb(121, 218, 223);
+    border-radius: 48px;
+    color: rgb(107, 107, 107);
+}
+#cartao .fatura:hover {
+    color: rgb(223, 22, 89);
+}
+#cartao .fatuaberta:hover {
+    color: rgb(223, 22, 89);
+}
+#cartao .nubank {
+    position: relative;
+    bottom: -100px;
+    height: 30px;
+    background: rgb(225, 254, 255);
+    margin-left: 40px;
+    border-radius: 48px;
+    padding: 4px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: rgb(184, 106, 236);
+}
+#cartao .pagarnubank {
+    position: relative;
+    bottom: -100px;
+    right: -620px;
+    height: 30px;
+    background: rgb(225, 254, 255);
+    margin-left: 260px;
+    border-radius: 48px;
+    padding: 6px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgb(107, 107, 107);
+    ;
+}
+#cartao .itau {
+    position: relative;
+    bottom: -110px;
+    height: 30px;
+    background: rgb(191, 229, 231);
+    margin-left: 40px;
+    border-radius: 48px;
+    padding: 4px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: rgb(241, 153, 70);
+    ;
+}
+#cartao .pagaritau {
+    position: relative;
+    bottom: -110px;
+    right: -660px;
+    height: 30px;
+    background: rgb(191, 229, 231);
+    margin-left: 260px;
+    border-radius: 48px;
+    padding: 6px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: rgb(107, 107, 107);
+}
+#cartao .bb {
+    position: relative;
+    bottom: -120px;
+    height: 30px;
+    background: rgb(225, 254, 255);
+    margin-left: 40px;
+    border-radius: 48px;
+    padding: 4px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: rgb(204, 191, 79);
+}
+#cartao .pagarbb {
+    position: relative;
+    bottom: -120px;
+    right: -525px;
+    height: 30px;
+    background: rgb(225, 254, 255);
+    margin-left: 260px;
+    border-radius: 48px;
+    padding: 6px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: rgb(107, 107, 107);
+}
+#cartao .santander {
+    position: relative;
+    bottom: -130px;
+    height: 30px;
+    background: rgb(191, 229, 231);
+    margin-left: 40px;
+    border-radius: 48px;
+    padding: 4px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: rgb(219, 102, 102);
+}
+#cartao .pagarsantander {
+    position: relative;
+    bottom: -130px;
+    right: -585px;
+    height: 30px;
+    background: rgb(191, 229, 231);
+    margin-left: 260px;
+    border-radius: 48px;
+    padding: 6px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: rgb(107, 107, 107);
+}
+#cartao .nubank:hover {
+    color: rgb(25, 123, 136);
+}
+#cartao .pagarnubank:hover {
+    color: rgb(25, 123, 136);
+}
+#cartao .itau:hover {
+    color: rgb(25, 123, 136);
+}
+#cartao .pagaritau:hover {
+    color: rgb(25, 123, 136);
+}
+#cartao .bb:hover {
+    color: rgb(25, 123, 136);
+}
+#cartao .pagarbb:hover {
+    color: rgb(25, 123, 136);
+}
+#cartao .santander:hover {
+    color: rgb(25, 123, 136);
+}
+#cartao .pagarsantander:hover {
+    color: rgb(25, 123, 136);
+}
